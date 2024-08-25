@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC Ticket Booking Clone</title>
+    <link rel="stylesheet" href="train.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>IRCTC</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Trains</a></li>
+                <li><a href="#">Tourism</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="booking-section">
+        <h2>Book Your Ticket</h2>
+        <form class="booking-form">
+            <div class="form-group">
+                <label for="from-station">From</label>
+                <input type="text" id="from-station" name="from-station" placeholder="Enter Departure Station">
+            </div>
+
+            <div class="form-group">
+                <label for="to-station">To</label>
+                <input type="text" id="to-station" name="to-station" placeholder="Enter Arrival Station">
+            </div>
+
+            <div class="form-group">
+                <label for="travel-date">Date</label>
+                <input type="date" id="travel-date" name="travel-date">
+            </div>
+
+            <div class="form-group">
+                <label for="class">Class</label>
+                <select id="class" name="class">
+                    <option value="sleeper">Sleeper (SL)</option>
+                    <option value="ac3">AC 3 Tier (3A)</option>
+                    <option value="ac2">AC 2 Tier (2A)</option>
+                    <option value="first-class">First Class (FC)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quota">Quota</label>
+                <select id="quota" name="quota">
+                    <option value="general">General</option>
+                    <option value="tatkal">Tatkal</option>
+                    <option value="ladies">Ladies</option>
+                    <option value="senior-citizen">Senior Citizen</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-submit">Search Trains</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 IRCTC Ticket Booking Clone. All rights reserved.</p>
+    </footer>
+</body>
+</html>
